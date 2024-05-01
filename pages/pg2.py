@@ -11,7 +11,7 @@ dash.register_page(__name__,
                    )
 
 
-df = pd.read_csv("/hrdataset.csv")
+df = pd.read_csv("pages/hrdataset.csv")
 
 # First graph
 fig_salary = px.box(df, x='Department', y='Salary', title='Salary Distribution by Department')
