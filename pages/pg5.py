@@ -11,7 +11,7 @@ dash.register_page(__name__,
                    )
 
 
-df = pd.read_csv("HRDataset_clean.csv")
+df = pd.read_csv("hrdataset.csv")
 
 
 count_of_employee = df[df.RaceDesc != 'White'].groupby('Position').Employee_Name.count().reset_index()

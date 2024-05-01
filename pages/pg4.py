@@ -11,7 +11,7 @@ dash.register_page(__name__,
                    )
 
 
-df = pd.read_csv("HRDataset_clean.csv")
+df = pd.read_csv("hrdataset.csv")
 
 # First graph
 employees_count_by_gender = df.groupby('Sex').Employee_Name.count().reset_index(name='count')

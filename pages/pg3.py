@@ -11,7 +11,7 @@ dash.register_page(__name__,
                    )
 
 
-df = pd.read_csv("HRDataset_clean.csv")
+df = pd.read_csv("hrdataset.csv")
 
 # First graph
 mean_df = df.groupby('MaritalDesc')['PerfScoreID'].mean().reset_index()
