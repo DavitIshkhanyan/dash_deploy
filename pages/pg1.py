@@ -12,7 +12,7 @@ dash.register_page(__name__,
                    title="Employees"
                    )
 
-df = pd.read_csv("hrdataset.csv")
+df = pd.read_csv("/hrdataset.csv")
 
 sorted_method = ['By department', 'By Recruitment Source']
 
